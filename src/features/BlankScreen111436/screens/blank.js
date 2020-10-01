@@ -56,20 +56,26 @@ export class __Blank extends React.Component {
           </View>
         </View>
         <View style={this.props.themedStyle.View_4}>
-          <Input
-            placeholder="Sample text input placeholder"
-            editable={true}
-            textStyle={{
-              fontSize: 12,
-              color: "#000000",
-              textAlign: "left",
-              fontWeight: "normal",
-              fontStyle: "normal"
-            }}
-            style={this.props.themedStyle.Input_124}
-            value={this.state.Input_124}
-            onChangeText={nextValue => this.setState({ Input_124: nextValue })}
-          />
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("BlankScreen011435")}
+          >
+            <Input
+              placeholder="Sample text input placeholder"
+              editable={true}
+              textStyle={{
+                fontSize: 12,
+                color: "#000000",
+                textAlign: "left",
+                fontWeight: "normal",
+                fontStyle: "normal"
+              }}
+              style={this.props.themedStyle.Input_124}
+              value={this.state.Input_124}
+              onChangeText={nextValue =>
+                this.setState({ Input_124: nextValue })
+              }
+            />
+          </TouchableOpacity>
         </View>
         <View style={this.props.themedStyle.View_61} />
         <View style={this.props.themedStyle.View_62} />
