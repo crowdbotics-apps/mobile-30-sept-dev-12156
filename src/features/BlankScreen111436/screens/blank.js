@@ -19,7 +19,7 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { Input_124: "" }
+  state = { Input_132: "" }
   render = () => (
     <View style={this.props.themedStyle.View_1}>
       <View style={this.props.themedStyle.View_2}>
@@ -35,7 +35,9 @@ export class __Blank extends React.Component {
                   fontStyle: "normal"
                 }}
                 style={this.props.themedStyle.Button_121}
-                onPress={() => alert("Pressed!")}
+                onPress={() =>
+                  this.props.navigation.navigate("BlankScreen011435")
+                }
               >
                 Press me!
               </Button>
@@ -50,33 +52,28 @@ export class __Blank extends React.Component {
                   Sample text content
                 </Text>
               </TouchableOpacity>
+              <Input
+                placeholder="Sample text input placeholder"
+                editable={true}
+                textStyle={{
+                  fontSize: 12,
+                  color: "#000000",
+                  textAlign: "left",
+                  fontWeight: "normal",
+                  fontStyle: "normal"
+                }}
+                style={this.props.themedStyle.Input_132}
+                value={this.state.Input_132}
+                onChangeText={nextValue =>
+                  this.setState({ Input_132: nextValue })
+                }
+              />
             </View>
             <View style={this.props.themedStyle.View_9} />
             <View style={this.props.themedStyle.View_10} />
           </View>
         </View>
-        <View style={this.props.themedStyle.View_4}>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate("BlankScreen011435")}
-          >
-            <Input
-              placeholder="Sample text input placeholder"
-              editable={true}
-              textStyle={{
-                fontSize: 12,
-                color: "#000000",
-                textAlign: "left",
-                fontWeight: "normal",
-                fontStyle: "normal"
-              }}
-              style={this.props.themedStyle.Input_124}
-              value={this.state.Input_124}
-              onChangeText={nextValue =>
-                this.setState({ Input_124: nextValue })
-              }
-            />
-          </TouchableOpacity>
-        </View>
+        <View style={this.props.themedStyle.View_4} />
         <View style={this.props.themedStyle.View_61} />
         <View style={this.props.themedStyle.View_62} />
       </View>
@@ -326,6 +323,37 @@ _Blank = withStyles(__Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+  Input_132: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
   View_9: {
     marginLeft: 0,
     marginRight: 0,
@@ -415,37 +443,6 @@ _Blank = withStyles(__Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0,
     backgroundSize: "auto"
-  },
-  Input_124: {
-    width: "100%",
-    marginLeft: 0,
-    marginRight: 0,
-    marginTop: 5,
-    marginBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    paddingTop: 5,
-    paddingBottom: 5,
-    overflow: "visible",
-    fontSize: 12,
-    color: "#000000",
-    backgroundColor: "#ffffff",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    borderColor: "#000000",
-    borderStyle: "solid",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
-    borderRadius: 0,
-    textAlign: "left",
-    textAlignVertical: "center",
-    textDecorationLine: "none",
-    textTransform: "none",
-    lineHeight: 12,
-    letterSpacing: 0
   },
   View_61: {
     marginLeft: 0,
