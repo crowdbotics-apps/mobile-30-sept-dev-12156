@@ -35,23 +35,15 @@ export class __Blank extends React.Component {
                   fontStyle: "normal"
                 }}
                 style={this.props.themedStyle.Button_121}
-                onPress={() =>
-                  this.props.navigation.navigate("BlankScreen011435")
-                }
+                onPress={() => alert("Pressed!")}
               >
                 Press me!
               </Button>
             </View>
             <View style={this.props.themedStyle.View_119}>
-              <TouchableOpacity
-                onPress={() =>
-                  this.props.navigation.navigate("BlankScreen011435")
-                }
-              >
-                <Text style={this.props.themedStyle.Text_126}>
-                  Sample text content
-                </Text>
-              </TouchableOpacity>
+              <Text style={this.props.themedStyle.Text_126}>
+                Sample text content
+              </Text>
               <Input
                 placeholder="Sample text input placeholder"
                 editable={true}
