@@ -40,7 +40,17 @@ export class __Blank extends React.Component {
                 Press me!
               </Button>
             </View>
-            <View style={this.props.themedStyle.View_119} />
+            <View style={this.props.themedStyle.View_119}>
+              <TouchableOpacity
+                onPress={() =>
+                  this.props.navigation.navigate("BlankScreen011435")
+                }
+              >
+                <Text style={this.props.themedStyle.Text_126}>
+                  Sample text content
+                </Text>
+              </TouchableOpacity>
+            </View>
             <View style={this.props.themedStyle.View_9} />
             <View style={this.props.themedStyle.View_10} />
           </View>
@@ -279,6 +289,36 @@ _Blank = withStyles(__Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0,
     backgroundSize: "auto"
+  },
+  Text_126: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   },
   View_9: {
     marginLeft: 0,
